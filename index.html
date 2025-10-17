@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人博客</title>
+  <!-- 引入样式文件 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>个人博客</h1>
+    <nav class="site-nav">
+      <a href="#about">关于我</a>
+      <a href="#posts">文章</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 关于我模块 -->
+    <section id="about" class="about-section">
+      <h2>关于我</h2>
+      <p>欢迎来到我的个人博客。我是一名信息专业教师，热爱阅读（哲学、心理学、历史、认知科学等）、慢跑和单车，并且喜欢音乐。这里记录我的思考与成长。</p>
+    </section>
+
+    <!-- 文章模块 -->
+    <section id="posts" class="posts-section">
+      <h2>最新文章</h2>
+      <!-- 列表容器，脚本会将文章动态插入这里 -->
+      <div id="post-list"></div>
+
+      <h3>发布新文章</h3>
+      <form id="new-post-form" class="new-post-form">
+        <input type="text" id="post-title" placeholder="文章标题" required>
+        <textarea id="post-content" placeholder="文章内容" rows="5" required></textarea>
+        <button type="submit">发布文章</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 个人博客 · 结构化成长之路</p>
+  </footer>
+
+  <!-- 引入脚本文件 -->
+  <script src="script.js"></script>
+</body>
+</html>
